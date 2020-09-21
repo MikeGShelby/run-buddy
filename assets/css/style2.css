@@ -12,9 +12,10 @@ header {
     padding: 20px 35px;
     background-color: #39a6b2;
     width: 100%;
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,0.25);
     z-index: 1000;
     position: fixed;
+    font-family:'Russo One', sans-serif;
 }
 header h1 {
     font-weight: bold;
@@ -22,6 +23,7 @@ header h1 {
     color: #fce138;
     margin:0;
     display:inline;
+
 }
 header a {
     color: #fce138;
@@ -80,46 +82,123 @@ section {
 
 .hero-form {
     display:flexbox;
-    max-width: 750px;
+    max-width: 650px;
     color: white;
-    margin-top: 50px;
     text-align:center;
-    align-content: right;
-
+    margin: 50px auto 0px;
 }
+
 .hero-form h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 35px;
+    font-size: 50px;
     margin:0;
     font-weight: normal;
     text-transform:uppercase;
 }
+
+.form-description {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    text-transform: uppercase;
+    margin:10px;
+    font-weight: lighter;
+    }
+
+.primary-input-section label {
+    visibility: hidden;
+    }
+
+.secondary-input-section {
+    visibility: hidden;
+    }
+
 .hero-form p {
     margin:5px 0 15px;
-}
+    }
 .hero-form button{
     border-radius:5px;
     display: block;
-    background-image: linear-gradient(blue, darkblue);
+    background: linear-gradient(#39a6b2, #0c7985);
     padding:15px;
     font-size:20px;
     width: 100%;
     color:white;
-}
+    text-transform: uppercase;
+    font-weight: bold;
+    }
 .hero-form button:hover {
     border-radius:5px;
     display: block;
-    background-color:lightblue;
+    background:linear-gradient(#3cb0bd, #139baa);;
     padding:15px;
     font-size:20px;
     width: 100%;
     color:white;
-}
+    }
 .form-input {
+    display: inline;
     border-radius:5px;
-    display: block;
-    padding: 15px;
+    padding: 10px;
     font-size:20 px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.intro{
+    text-align: center;
+    }
+
+
+.intro p {
+    line-height:1.7;
+    color:#39a6b2;
+    width:80%;
+    font-size: 20px;
+    margin: 0 auto;
+    }
+
+.steps {
+    text-align:center;
+    background:#fce138;
+    }
+
+.section-title {
+    font-size:55px;
+    color:#024e76;
+    margin-bottom:35px;
+    padding:0 100px 20px;
+    display: inline-block;
+    border-bottom: 3px solid;
+    }
+
+.primary-border {
+    border-color:#fce138;
+    }
+
+.secondary-border {
+    border-color:#39e6b2;
+    }
+
+.steps div{
+    margin-bottom:80px;
+    }
+
+.steps img {
+    width: 15%;
+    margin:10px 0;
+    }
+
+.steps h3 {
+    color:#024e76;
+    font-size:46px;
+    margin-top: 10px;
+    }
+
+.steps p {
+    color:#39a6b2;
+    font-size:23px;
+    }
+
+.steps span {
+font-size:38px;
 }

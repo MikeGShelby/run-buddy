@@ -12,7 +12,6 @@ header {
     padding: 20px 35px;
     background-color: #39a6b2;
     width: 100%;
-
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
     z-index: 1000;
     position: relative;
@@ -156,7 +155,7 @@ section {
     margin-bottom:80px;
     }
 
-.steps img{
+.steps img {
     width: 15%;
     margin:10px 0;
     }
@@ -171,6 +170,7 @@ section {
     color:#39a6b2;
     font-size:23px;
     }
+
 .steps span {
 font-size:38px;
 }
