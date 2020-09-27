@@ -22,16 +22,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 header h1 {
     font-weight: bold;
     font-size:36px;
     color: #fce138;
     margin:0;
-}
-header nav {
-    font-weight: lighter;
-    font-size:22px;
 }
 
 header nav ul {
@@ -46,6 +43,7 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     }
+
 header a {
     color: #fce138;
     text-decoration: none;
@@ -54,9 +52,6 @@ header a {
 header a:hover {
     text-decoration:underline;
 }
-
-
-
 
 /*-- HERO/JUMBOTRON --*/
 .hero {
@@ -265,17 +260,18 @@ footer{
     background:#fce138;
     width: 100%;
     padding:40px 35px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
     color:#024e76;
     font-size: 30px;
     margin: 0;
 }
 
-footer div{
-    float:right;
+footer div {
     line-height: 1.5;
     text-align: right;
 }
