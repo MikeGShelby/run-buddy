@@ -11,6 +11,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+
+
 /*-- HEADER --*/
 header {
     padding: 20px 35px;
@@ -63,18 +65,18 @@ header a:hover {
     flex-wrap: wrap;
 }
 .hero-cta {
-width: 35%;
-text-align: right;
-margin: 3.5%;
-color:#fff;
-font-size: 18px;
-line-height: 1.3;
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color:#fff;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .hero-cta h2 {
-font-style: italic;
-font-size: 55px;
-color:#fce138;
+    font-style: italic;
+    font-size: 55px;
+    color:#fce138;
 }
 
 .hero-form {
@@ -116,14 +118,16 @@ color:#fce138;
     padding: 10px 20px;
     font-size:16px;
     }
+
 /*-- SECTION: ALL --*/
 .section-title {
     font-size:55px;
     color:#024e76;
-    margin-bottom:35px;
-    padding:0 100px 20px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px;
+    width: 50%;
     }
 section {
     padding:60px;
@@ -138,52 +142,72 @@ section {
     }
 
 /*-- SECTION: "WHAT WE DO" --*/
-.intro {
-    text-align: center;
-    }
-
 .intro p {
     line-height:1.7;
     color:#39a6b2;
     width:80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
     }
 
 
 /*-- SECTION: "WHAT YOU DO" --*/
+.step {
+    margin:50px auto;
+    padding-bottom:50px;
+    width:80%;
+    border-bottom:1px solid#39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
 .steps {
-    text-align:center;
     background:#fce138;
-    }
+}
 
-.steps div{
-    margin-bottom:80px;
-    }
-
-.steps img {
-    width: 15%;
-    margin:10px 0;
-    }
-
-.steps h3 {
+.step h3 {
     color:#024e76;
     font-size:46px;
-    margin-top: 10px;
-    }
+    flex: 1 30%;
+}
 
-.steps p {
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.step-img {
+    flex:1 12%;
+    margin-right: 20px;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+flex: 12;
+}
+
+.step-text h4 {
+font-size:26px;
+line-height: 1.5;
+color: #024e76;
+}
+
+.step-text p {
     color:#39a6b2;
-    font-size:23px;
-    }
+    font-size:18px;
+}
 
-.steps span {
-    font-size:38px;
-    }
 
 /*-- SECTION: "MEET THE TRAINERS" --*/
 .trainers {
-    text-align: center;
+
     }
 
 .trainer {
@@ -231,7 +255,6 @@ section {
 
 /*-- SECTION: "CONTACT" --*/
 .contact {
-    text-align:center;
     background: #024e76;
 }
 
@@ -292,4 +315,9 @@ footer div {
 
 footer a{
     color:#024e76;
+}
+
+/*-- UTILITY STYLES --*/
+.flex-row {
+    display:flex;
 }
