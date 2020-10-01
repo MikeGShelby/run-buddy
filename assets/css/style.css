@@ -106,11 +106,11 @@ header a:hover {
     color:#024e76;
     width: 100%;
     margin-bottom: 15px;
-    }
+}
 
 .hero-form label {
     margin:0 5px;
-    }
+}
 
 .hero-form button {
     color:#fce138;
@@ -118,7 +118,7 @@ header a:hover {
     border: none;
     padding: 10px 20px;
     font-size:16px;
-    }
+}
 
 /*-- SECTION: ALL --*/
 .section-title {
@@ -129,18 +129,22 @@ header a:hover {
     text-align: center;
     margin: 0 auto 35px;
     width: 50%;
-    }
+}
 section {
     padding:60px;
 }
 
 .primary-border {
     border-color:#fce138;
-    }
+}
 
 .secondary-border {
     border-color:#39e6b2;
-    }
+}
+
+.yellow-background {
+    background-color: #fce138;
+}
 
 /*-- SECTION: "WHAT WE DO" --*/
 .intro p {
@@ -150,7 +154,7 @@ section {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
-    }
+}
 
 
 /*-- SECTION: "WHAT YOU DO" --*/
@@ -163,10 +167,6 @@ section {
     flex-wrap: wrap;
     align-items:center;
     justify-content: space-between;
-}
-
-.steps {
-    background:#fce138;
 }
 
 .step h3 {
@@ -253,17 +253,53 @@ color: #024e76;
     font-size: 17px;
 }
 
-/*-- SECTION: "SERVICE PLANS"" --*/
-.service-grid-container {
+/*-- SECTION: "SERVICE PLANS" --*/
 
+.service-grid-wrapper {
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+.service-grid-container {
+    background: lightyellow;
+    width:80%;
+    display: grid;
+    grid-template-columns:1fr repeat(2, 4fr);
+    grid-template-rows:repeat(5, 1fr) 2fr;
+    border:2px solid #024e76;
+    color:#024e76;
+    font-size:1.2rem;
 }
 
 .service-grid-item {
-
+    padding: 15px 0;
+    border: 2px solid #024e76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+  .service-grid-item.basic {
+    grid-column: 2 / span 1;
+}
 
+.service-grid-item.both {
+    grid-column: 2 / span 2;
+}
 
+.service-grid-item.cancel {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /*-- SECTION: "CONTACT" --*/
 .contact {
@@ -326,8 +362,7 @@ color:#fce138;
 }
 
 /* FOOTER */
-footer{
-    background:#fce138;
+footer {
     width: 100%;
     padding:40px 35px;
     display:flex;
@@ -429,6 +464,26 @@ footer a{
 
       .step-text {
         flex: 100%;
+      }
+
+    /* Grid Styles */
+      .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .service-grid-item.basic {
+        grid-column: 1;
+      }
+
+      .service-grid-item.both {
+        grid-column: 1 / -1;
+      }
+
+      .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 / -1;
+        grid-row: -1;
       }
 
   }
